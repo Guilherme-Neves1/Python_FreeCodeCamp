@@ -45,3 +45,52 @@ band["vocals"] = "Coverdale"
 band.update({"bass": "JPJ"})
 
 print(band)
+
+print("")
+# Remove items
+print(band.pop("bass"))
+print(band)
+
+print("")
+band["drums"] = "Bonham"
+print(band)
+
+print("")
+print(band.popitem()) # tuple
+print(band)
+
+print("")
+# Delete and clear
+band["drums"] = "Bonham"
+del band["drums"]
+print(band) 
+
+band2.clear()
+print(band2)
+
+del band2
+
+print("")
+# Copy dictionaries
+
+## BAD COPY!
+# band2 = band # create a reference
+# print(band2)
+# print(band) 
+
+# band2["drums"] = "Dave"
+# print(band)
+
+## GOOD COPY!
+band2 = band.copy()
+band2["drums"] = "Dave"
+
+print(band)
+print(band2)
+
+# Or use the dict() constructor function
+## GOOD COPY!
+band3 = dict(band)
+print(band3)
+
+
