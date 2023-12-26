@@ -12,5 +12,9 @@
 
 # python -m pip uninstall requests => Desinstala biblioteca
 
+##############################################
+# CRIANDO AMBIENTES VIRTUAIS
+
+# python -m venv .venv
 
 
