@@ -1,6 +1,6 @@
 # ARCADE
 import sys
-from rps_21 import rps
+from exercises.rps_21 import rps
 from guess_number_21 import guess_number
 
 def play_game(name="PlayerOne"):
