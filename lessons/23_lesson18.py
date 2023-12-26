@@ -23,6 +23,10 @@ your_car.get_make_model()
 your_car.moves()
 
 class Airplane(Vehicle):
+  def __init__(self, make, model, faa_id):
+    super().__init__(make, model)
+    self.faa_id = faa_id
+
   def moves(self):
     print('Flies along..')
 
@@ -33,7 +37,7 @@ class Truck(Vehicle):
 class GolfCart(Vehicle):
   pass
 
-cessna = Airplane('Cessna', 'Skyhawk')
+cessna = Airplane('Cessna', 'Skyhawk', 'N-12345')
 mack = Truck('Mack', 'Pinnacle')
 golfwagon = GolfCart('Yamaha', 'GC100')
 
@@ -46,4 +50,8 @@ mack.moves()
 golfwagon.get_make_model()
 golfwagon.moves()
 
+print('\n\n')
 
+for v in (my_car, your_car, cessna, mack, golfwagon):
+  v.get_make_model()
+  v.moves()
