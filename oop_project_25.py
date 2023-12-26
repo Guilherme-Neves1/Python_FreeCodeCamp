@@ -13,3 +13,19 @@ Dave.withdraw(100)
 
 Dave.transfer(10000, Sara)
 Dave.transfer(100, Sara)
+
+Jim = InterestRewardsAcct(1000, "Jim")
+
+Jim.getBalance()
+
+Jim.deposit(100)
+
+Jim.transfer(100, Dave)
+
+Blaze = SavingAcct(1000, "Blaze")
+
+Blaze.getBalance()
+
+Blaze.deposit(100)
+
+Blaze.transfer(10000, Sara)
