@@ -1,4 +1,4 @@
-from bank_accounts_25 import *
+from exercises.bank_accounts_25 import *
 
 Dave = BankAccount(1000, "Dave")
 Sara = BankAccount(2000, "Sara")
@@ -29,3 +29,4 @@ Blaze.getBalance()
 Blaze.deposit(100)
 
 Blaze.transfer(10000, Sara)
+Blaze.transfer(1000, Sara)
