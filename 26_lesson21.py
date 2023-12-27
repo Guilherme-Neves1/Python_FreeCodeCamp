@@ -17,4 +17,9 @@
 
 # python -m venv .venv
 
+## NO ANACONDA
+# conda create -n nome_do_ambiente python=3.6
 
+# conda activate nome_do_ambiente
+
+# conda deactivate
